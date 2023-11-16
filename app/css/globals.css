@@ -1,0 +1,63 @@
+html {
+	font-size: var(--font-size,112.5%);
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	align-items: center;
+	display: flex;
+	font-family: var(--font-name,'Kumbh Sans'), sans-serif;
+	justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+	padding: 0;
+	background:	var(--dark-cyan);
+
+}
+
+body::before ,
+body::after {
+	position: absolute;
+	content: "";
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	width: 50%;
+	height: 50%;
+	z-index: -2;
+}
+
+body::before {
+	background-image: url('../../images/bg-pattern-top.svg');
+	left: 0;
+	top: 0;
+	transform: scale(1,-1);
+}
+
+body::after {
+	background-image: url('../../images/bg-pattern-bottom.svg');
+	right: 0;
+	bottom: 0;
+}
+
+p {
+	margin: 0;
+	font-size: .72em;
+	font-weight: var(--large-font-weight);
+}
+
+hr {
+	background-color: var(--dark-gray,hsl(0, 0%, 59%));
+	border:0;
+	height: .05em;
+	margin: .2778em 0;
+	width: 100%;
+}
+
+hr, span {
+	color: var(--dark-gray,hsl(0, 0%, 59%));
+} 

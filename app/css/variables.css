@@ -1,0 +1,28 @@
+:root {
+	/*	start color variables	*/
+
+	--dark-cyan:hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue:hsl(229, 23%, 23%);
+	--dark-grayish-blue:hsl(227, 10%, 46%);
+	--dark-gray:hsl(0, 0%, 59%);
+	--white:#fff;
+
+	/*	end color variables	*/
+
+	/*	start font variables	*/
+
+	--font-size: 112.5%;
+	--font-name:'Kumbh Sans';
+	--small-font-weight:400;
+	--large-font-weight:700;
+
+	/*	end font variables	*/
+
+	/*	start layout variables	*/
+
+	--mobile-max-width:375px;
+	--desktop-max-width:1440px;
+	--card-img-measure:5.556em;
+
+	/*	end layout variables	*/
+}

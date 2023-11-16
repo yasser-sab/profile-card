@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import "variables.css";
+@import "globals.css";
+
+.card {
+	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	height: 20.778em;
+	width: 19.44em;
+	border-radius: .83rem;
+	overflow: hidden;
+	text-align: center;
+	background-color: var(--white,#fff);
+}
+	.card__head ,
+	.card__content {
+		height: 7.778em;
+		/*width: 19.44rem;*/
+	}
+
+	.card__head {
+		background: url('../../images/bg-pattern-card.svg');
+	}
+
+	.card__content {
+		position: relative;
+		background:	var(--white,#fff);
+	}
+		.card__account {
+			position: absolute;
+			left: 50%;
+			top:calc(var(--card-img-measure,5.556em) / -2);
+			height: 100%;
+			transform: translateX(-50%);
+		}
+			.card__account > span {
+				font-size: .61em;
+			}
+			
+			.card__account p {
+				color: var(--very-dark-desaturated-blue,hsl(229, 23%, 23%));
+			}
+			.card__img {
+				width: var(--card-img-measure,5.556em);
+				height: var(--card-img-measure,5.556em);
+				border-radius: 50%;
+				border:.2778em solid var(--white,#fff);
+				margin: 0 auto;
+				margin-bottom: calc(var(--card-img-measure,5.556em) / 4);
+				background-image: url('../../images/image-victor.jpg');
+				background-repeat: no-repeat;
+				background-size: 110%;
+				background-position: center;
+				transition: .5s ease-out;
+			}
+
+			.card__img:hover {
+				background-size: 130%;
+			}
+
+			.card__account p {
+				margin-bottom: calc(var(--card-img-measure,5.556em) / 8);
+			}
+
+	.card__foot {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 4.61em;
+	}
+		.card__foot p {
+			color: var(--dark-grayish-blue,hsl(227, 10%, 46%));
+		}
+		.card__foot span {
+			font-size: .44em;
+			font-weight: var(--small-font-weight);
+		}
+
+
+@media(max-width:375px) {
+	.card {
+		font-size: .8rem;
+	}
+}
